@@ -26,10 +26,17 @@ require_once("config.php");
 // echo $aluno;
 
 //Atualiza um usuário na tabela
+// $usuario = new Usuario();
+// $usuario->loadById(1);
+// $usuario->update("professor", "!@#$%");
+// echo $usuario
+
+//Deleta um usuário da tabela
 $usuario = new Usuario();
 $usuario->loadById(1);
-$usuario->update("professor", "!@#$%");
-echo $usuario
+$usuario->delete();
+
+echo $usuario;
 
 
  ?>
