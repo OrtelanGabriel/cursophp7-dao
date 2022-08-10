@@ -18,5 +18,12 @@ require_once("config.php");
 //Carrega um usuário usando o login e a senha
 // $usuario = new Usuario();
 // $usuario->login("user", "12345");
+// echo $usuario;
+
+//Insere um usuário na tabela
+$aluno = new Usuario("aluno", "@lun0");
+$aluno->insert();
+echo $aluno;
+
 
  ?>
