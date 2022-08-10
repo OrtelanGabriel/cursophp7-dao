@@ -21,9 +21,15 @@ require_once("config.php");
 // echo $usuario;
 
 //Insere um usuário na tabela
-$aluno = new Usuario("aluno", "@lun0");
-$aluno->insert();
-echo $aluno;
+// $aluno = new Usuario("aluno", "@lun0");
+// $aluno->insert();
+// echo $aluno;
+
+//Atualiza um usuário na tabela
+$usuario = new Usuario();
+$usuario->loadById(1);
+$usuario->update("professor", "!@#$%");
+echo $usuario
 
 
  ?>
